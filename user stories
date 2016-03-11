@@ -22,6 +22,8 @@ In order to pay for my journey
 As a customer
 I need to have the minimum amount for a single journey
 
+=================
+
 In order to pay for my journey
 As a customer
 I need to pay for my journey when it's complete
@@ -38,6 +40,21 @@ In order to know how far I have travelled
 As a customer
 I want to know what zone a station is in
 
+
+Objects
+
+Customer - Oystercard
+Journey
+Station/s
+Journey log
+
+
+deduct fare (pay)
+journey complete?
+know where travelled from/to
+see prev trips (show history)
+
+
 In order to be charged correctly
 As a customer
 I need a penalty charge deducted if I fail to touch in or out
@@ -45,3 +62,7 @@ I need a penalty charge deducted if I fail to touch in or out
 In order to be charged the correct amount
 As a customer
 I need to have the correct fare calculated
+
+{:entry_station=>"bank", :exit_station=>"oval"},
+{:entry_station=>nil, :exit_station=>"oval"},
+{:entry_station=>"bank", :exit_station=>"oval"}

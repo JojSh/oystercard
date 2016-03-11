@@ -8,32 +8,17 @@ class Journey
   def initialize
     @entry_station = nil
     @exit_station = nil
-    @complete = false
   end
 
-  def start(station)
+  def enters(station)
     @entry_station = station
   end
 
-  def end(station)
+  def exits(station)
     @exit_station = station
   end
 
   def fare
     (@entry_station != nil && @exit_station != nil) ? MINIMUM_FARE : PENALTY_FARE
   end
-
-  def reset_stations
-    @entry_station = nil
-    @exit_station = nil
-  end
-
-
-  private
-
-  def journey_complete?
-    @complete
-  end
-
-
 end
